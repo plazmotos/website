@@ -6426,6 +6426,18 @@ fieldset:disabled .btn {
 .mb-4 {
   margin-bottom: 1.5rem !important;
 }
+#about .mb-4{
+  color: white;
+}
+#about .mb-3{
+  color: white;
+}
+#about .display-1{
+  color: blue;
+}
+#skill .mb-4{
+  color:white;
+}
 .mb-5 {
   margin-bottom: 3rem !important;
 }
