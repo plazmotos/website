@@ -250,15 +250,184 @@
 
 
 /*** Service ***/
-.service-item .bg-icon {
-    width: 100px;
-    height: 100px;
+#prices {
+    margin-top: 50px;
+    height: 1666px !important;
+  }
+  
+  .price-box {
+    border: 2px solid #e6f2ff;
+    border-radius: 6px;
+    padding: 70px 30px 30px 30px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    justify-content: center;
-    background: url(../img/bg-icon.png) center center no-repeat;
-    background-size: cover;
-}
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+    z-index: 500;
+    
+  }
+  .price-box h2 {
+    position: absolute;
+    text-align: center;
+    background: #f1f8ff  ;
+    color: blue;
+    font-weight: bold;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e6f2ff;
+  }
+  .price-box h3 {
+    position: relative;
+    color: var(--primary);
+    font-size: 4em;
+    font-weight: 400;
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  .price-box h3:before {
+    content: "$";
+    position: absolute;
+    top: -10px;
+    left: -35px;
+    font-size: 1em;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    height: auto;
+  }
+  .price-box h3:after {
+    content: "/MO";
+    position: absolute;
+    right: -86px;
+    bottom: -15px;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  .price-box .not-mo:after {
+    display: none;
+  }
+  .price-box ul li {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  .price-box ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+  }
+  .price-box ul li img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -30px;
+  }
+  .price-box p {
+    font-size: 13px !important;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .price-box p span {
+    color: var(--primary) !important;
+    font-weight: 700;
+  }
+  .price-box:nth-child(3) h3 {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .price-box:nth-child(3) h3:after {
+    display: none;
+  }
+  .section {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+  .button-solid {
+    color: #fff;
+    background: #43b7ff;
+    background: -o-linear-gradient(left, #43b7ff 0, #00ddf6 100%);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#43b7ff),
+      to(#00ddf6)
+    );
+    background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
+    border-radius: 3px;
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: auto;
+    margin: 10px 0;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 0.75em;
+    width: auto;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+  }
+  .button-solid:hover {
+    color: var(--primary);
+    background: #fff;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+  }
+  .button-transparent {
+    display: inline-block;
+    background: 0 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    font-size: 0.75em;
+    margin: 10px 0;
+    padding: 6px 30px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    border-radius: 3px;
+    white-space: nowrap;
+    float: left;
+    height: 50px;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .button-transparent:hover {
+    color: #fff;
+    background: var(--primary);
+    border: none;
+  }
 
 
 /*** Project Portfolio ***/
